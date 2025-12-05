@@ -8,8 +8,9 @@ and Yi Zeng
 
 Code for **"RS-ISRefiner: Towards Better Adapting Vision Foundation Models for Interactive Segmentation of Remote Sensing Images"**
 
-Model Structure
-![image](https://github.com/wondelyan/RS-ISRefiner/blob/分支名/RS-ISRefiner_Structure.png)
+### Model Structure
+
+![image](https://github.com/wondelyan/RS-ISRefiner/blob/main/image/RS-ISRefiner_Structure.png)
 
 
 ### Requirements
