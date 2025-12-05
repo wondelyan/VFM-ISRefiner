@@ -1,0 +1,64 @@
+INTERACTIVE_MODELS_PATH: "./weights"
+EXPS_PATH: "/home/dell/data/wdl/RS_ISRefiner/model_logs/model_0927_2025"
+
+# Evaluation datasets
+GRABCUT_PATH: "/home/dell/data/wdl/datasets/common_datasets/GrabCut"
+BERKELEY_PATH: "/home/dell/data/wdl/datasets/common_datasets/Berkeley"
+DAVIS_PATH: "/home/dell/data/wdl/datasets/DAVIS"
+COCO_MVAL_PATH: "/playpen-raid2/qinliu/data/COCO_MVal"
+BraTS_PATH: "/playpen-raid2/qinliu/data/BraTS20"
+ssTEM_PATH: "/playpen-raid2/qinliu/data/ssTEM"
+OAIZIB_PATH: "/playpen-raid2/qinliu/data/OAI-ZIB/iseg_slices"
+OAI_PATH: "/playpen-raid2/qinliu/data/OAI"
+HARD_PATH: "/playpen-raid2/qinliu/data/HARD"
+
+# Train datasets
+SBD_PATH: "/home/dell/data/wdl/datasets/SBD"
+COCO_PATH: "/playpen-raid2/qinliu/data/COCO_2017"
+LVIS_v1_PATH: "/home/dell/data/wdl/datasets/COCOLVIS"
+OPENIMAGES_PATH: "./datasets/OpenImages"
+PASCALVOC_PATH: "/playpen-raid2/qinliu/data/PascalVOC"
+ADE20K_PATH: "./datasets/ADE20K"
+
+# Remote Sensing datasets
+# train datasets
+ISAID_PATH: "/home/dell/data/wdl/datasets/RS_datasets/iSAID_sam_patches"
+POTSDAM_PATH: "/home/dell/data/wdl/datasets/RS_datasets/Potsdam/potsdam"
+
+# test datasets
+WHUBUILDING_TEST_PATH: "/home/dell/data/wdl/datasets/RS_datasets/WHUBuildingTest"
+NWPU_PATH: "/home/dell/data/wdl/datasets/RS_datasets/NWPU"
+SSDD_PATH: "/home/dell/data/wdl/datasets/RS_datasets/SSDD"
+VAIHINGEN_PATH: "/home/dell/data/wdl/datasets/RS_datasets/Vaihingen/vaihingen"
+LOVEDA_PATH: "/home/dell/data/wdl/datasets/RS_datasets/LoveDA/Urban"
+SANDBAR_PATH: "/home/dell/data/wdl/datasets/RS_datasets/Sandbar"
+
+
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+IMAGENET_PRETRAINED_MODELS:
+  HRNETV2_W18: "./weights/pretrained/hrnetv2_w18_imagenet_pretrained.pth"
+  HRNETV2_W32: "/home/admin/workspace/project/data/weights/hrnetv2_w32_imagenet_pretrained.pth"
+  HRNETV2_W40: "./weights/pretrained/hrnetv2_w40_imagenet_pretrained.pth"
+  HRNETV2_W48: "./weights/pretrained/hrnetv2_w48_imagenet_pretrained.pth"
+  HRNETV2_W64: "./weights/pretrained/hrnetv2_w64_imagenet_pretrained.pth"
+  MIT_B5: "./weights/pretrained/mit_b5_converted.pth"
+  MIT_B4: "./weights/pretrained/mit_b4_converted.pth"
+  MIT_B3: "./weights/pretrained/mit_b3_converted.pth"
+  MIT_B2: "./weights/pretrained/mit_b2_converted.pth"
+  MIT_B1: "./weights/pretrained/mit_b1_converted.pth"
+  MIT_B0: "./weights/pretrained/mit_b0_converted.pth"
+  HRF_BASE: "./weights/pretrained/hrt_base.pth"
+  SWIN_BASE: "./weights/pretrained/swin_base_patch4_window12_384_22k.pth"
+  SWIN_LARGE: "./weights/pretrained/swin_large_patch4_window12_384_22k.pth"
+  MAE_BASE: "./weights/pretrained/mae_pretrain_vit_base.pth"
+  MAE_LARGE: "./weights/pretrained/mae_pretrain_vit_large.pth"
+  MAE_HUGE: "./weights/pretrained/mae_pretrain_vit_huge.pth"
+  MFP_BASE: "./weights/pretrained/MFP_vit_base_cocolvis.pth"
+
+  # MAE_WEIGHTS:  
+  #   VIT_BASE: "./weights/pretrained/mae_pretrain_vit_base.pth"
+  #   VIT_LARGE: "./weights/mae_pretrain_vit_large.pth"
+  #   VIT_HUGE: "./weights/mae_pretrain_vit_huge.pth"
+
