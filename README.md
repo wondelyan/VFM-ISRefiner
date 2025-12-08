@@ -1,4 +1,4 @@
-# RS-ISRefiner
+# VFM-ISRefiner
 Deliang Wang,
 Peng Liu,
 Rongkai Zhuang,
@@ -6,11 +6,11 @@ Lajiao Chen,
 Bing Li,
 and Yi Zeng
 
-Code for **"RS-ISRefiner: Towards Better Adapting Vision Foundation Models for Interactive Segmentation of Remote Sensing Images"**
+Code for **"VFM-ISRefiner: Towards Better Adapting Vision Foundation Models for Interactive Segmentation of Remote Sensing Images"**
 
 ### Model Structure
 
-![image](https://github.com/wondelyan/RS-ISRefiner/blob/main/image/RS-ISRefiner_Structure.png)
+![image](https://github.com/wondelyan/VFM-ISRefiner/blob/main/image/VFM-ISRefiner_Structure.png)
 
 
 ### Requirements
@@ -29,32 +29,32 @@ Create conda environment:
 ```
 Download repository:
 ```bash
-    $ git clone https://github.com/wondelyan/RS-ISRefiner.git
+    $ git clone https://github.com/wondelyan/VFM-ISRefiner.git
 ```
 Download weights:
 
-RS-ISRefiner model [Baidu Netdisk](https://pan.baidu.com/s/1pbzMKQovS7qK1uBWkL00Jw?pwd=76bm)
+VFM-ISRefiner model [Baidu Netdisk](https://pan.baidu.com/s/1VoSG63g0pNE7yUXroyO9Ww?pwd=q52j)
 
 ### Datasets
-The datasets used for training are iSAID-train and Potsdam. [Baidu Netdisk](https://pan.baidu.com/s/1ZWkRtuwi_QXi7z9yVlAoWg?pwd=gekj)
+The datasets used for training are iSAID-train and Potsdam. [Baidu Netdisk](https://pan.baidu.com/s/15nMOMJKpNDoBek78oDXKGg?pwd=vg4t)
 
-The datasets used for testing are iSAID-val, SandBar, NWPU, LoveDA Urban and WHUBuilding-test. [Baidu Netdisk](https://pan.baidu.com/s/1AMz5J3ds7rMyedam_a3HdA?pwd=mnvk)
+The datasets used for testing are iSAID-val, SandBar, NWPU, LoveDA Urban and WHUBuilding-test. [Baidu Netdisk](https://pan.baidu.com/s/1ew8b8sWbsn6tBQHyjvGfng?pwd=ui34)
  
 
 ### Evaluation
-For evaluation, please download the datasets and models, and then configure the path in [config.yml](https://github.com/wondelyan/RS-ISRefiner/blob/main/config.yml)
+For evaluation, please download the datasets and models, and then configure the path in [config.yml](https://github.com/wondelyan/VFM-ISRefiner/blob/main/config.yml)
 
 ```
 python scripts/evaluate_model.py NoBRS \
 --gpu=0 \
---checkpoint=./weights/model_checkpoints/RS-ISRefiner_ViT_base448_RSImage.pth \
+--checkpoint=./weights/model_checkpoints/VFM-ISRefiner_ViT_base448_RSImage.pth \
 --eval-mode=cvpr \
 --datasets=iSAID,SandBar,NWPU,LoveDA,WHUBuilding
 ```
 ### Train
 For training, please download the MFP pretrained weights (click to download: [MFP_vit_Base](https://drive.google.com/drive/folders/1ygeSwkVfGlydP-LW6YnhSCyed4kLOe0f)) and put the weights in "./weights/pretrained" folder. 
 
-Configure the dowloaded path in [config.yml](https://github.com/wondelyan/RS-ISRefiner/blob/main/config.yml).
+Configure the dowloaded path in [config.yml](https://github.com/wondelyan/VFM-ISRefiner/blob/main/config.yml).
 
 ```
 python train.py models/iter_mask/plainvit_base448_RSImage_itermask_prevMod.py \
